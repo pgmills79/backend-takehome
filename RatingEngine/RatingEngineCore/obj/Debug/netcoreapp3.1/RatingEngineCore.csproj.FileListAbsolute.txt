@@ -1,0 +1,9 @@
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\bin\Debug\netcoreapp3.1\RatingEngineCore.deps.json
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\bin\Debug\netcoreapp3.1\RatingEngineCore.dll
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\bin\Debug\netcoreapp3.1\RatingEngineCore.pdb
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\obj\Debug\netcoreapp3.1\RatingEngineCore.csproj.AssemblyReference.cache
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\obj\Debug\netcoreapp3.1\RatingEngineCore.AssemblyInfoInputs.cache
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\obj\Debug\netcoreapp3.1\RatingEngineCore.AssemblyInfo.cs
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\obj\Debug\netcoreapp3.1\RatingEngineCore.csproj.CoreCompileInputs.cache
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\obj\Debug\netcoreapp3.1\RatingEngineCore.dll
+C:\Users\M246830\source\repos\backend-takehome\RatingEngine\RatingEngineCore\obj\Debug\netcoreapp3.1\RatingEngineCore.pdb

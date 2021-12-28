@@ -1,0 +1,211 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineAPI\\RatingEngineAPI.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineAPI\\RatingEngineAPI.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineAPI\\RatingEngineAPI.csproj",
+        "projectName": "RatingEngineAPI",
+        "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineAPI\\RatingEngineAPI.csproj",
+        "packagesPath": "C:\\Users\\M246830\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineAPI\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\M246830\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactrepo.mayo.edu/repository/alm_public_read_nuget/": {},
+          "https://pkgs.dev.azure.com/mclm/_packaging/GBSCAD%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj": {
+                "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj",
+        "projectName": "RatingEngineCore",
+        "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj",
+        "packagesPath": "C:\\Users\\M246830\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\M246830\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactrepo.mayo.edu/repository/alm_public_read_nuget/": {},
+          "https://pkgs.dev.azure.com/mclm/_packaging/GBSCAD%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj",
+        "projectName": "RatingEngineInfrastructure",
+        "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj",
+        "packagesPath": "C:\\Users\\M246830\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\M246830\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://artifactrepo.mayo.edu/repository/alm_public_read_nuget/": {},
+          "https://pkgs.dev.azure.com/mclm/_packaging/GBSCAD%40Local/nuget/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj": {
+                "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

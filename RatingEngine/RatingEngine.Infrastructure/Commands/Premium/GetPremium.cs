@@ -10,7 +10,7 @@ namespace QuoteEngineInfrastructure.Commands.Premium
     public static class GetPremium
     {
         private const int HazardFactor = 4;
-        public static async Task<RatingEngineCore.Models.Premium> GetPremiumAsync(Payload input)
+        public static async Task<RatingEngineCore.Models.Premium> ReturnPremiumAmountAsync(Payload input)
         {
 
             var stateFactor = Factors.GetStateFactor(input.State);

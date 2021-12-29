@@ -29,7 +29,7 @@ namespace RatingEngine.IntegrationTests
         [InlineData("300000", "OH", "Programmer","1,500.00")]
         [InlineData("300000", "TX", "Architect","1,131.60")]
         [InlineData("500000", "TX", "Programmer","2,357.50")]
-        public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string revenue, string state, 
+        public async Task POST_Payloads_Should_Return_Correct_Premium_Amounts(string revenue, string state, 
             string business, string expectedResult)
         {
             // Arrange

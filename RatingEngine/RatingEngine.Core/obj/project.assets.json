@@ -15,17 +15,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj",
-      "projectName": "RatingEngineCore",
-      "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj",
+      "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj",
+      "projectName": "RatingEngine.Core",
+      "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj",
       "packagesPath": "C:\\Users\\M246830\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\obj\\",
+      "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
+        "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\NuGet.Config",
         "C:\\Users\\M246830\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
@@ -35,10 +36,7 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://artifactrepo.mayo.edu/repository/alm_public_read_nuget/": {},
-        "https://pkgs.dev.azure.com/mclm/_packaging/GBSCAD%40Local/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {

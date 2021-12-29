@@ -2,28 +2,28 @@
   "version": 3,
   "targets": {
     ".NETCoreApp,Version=v3.1": {
-      "RatingEngineCore/1.0.0": {
+      "RatingEngine.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "compile": {
-          "bin/placeholder/RatingEngineCore.dll": {}
+          "bin/placeholder/RatingEngine.Core.dll": {}
         },
         "runtime": {
-          "bin/placeholder/RatingEngineCore.dll": {}
+          "bin/placeholder/RatingEngine.Core.dll": {}
         }
       }
     }
   },
   "libraries": {
-    "RatingEngineCore/1.0.0": {
+    "RatingEngine.Core/1.0.0": {
       "type": "project",
-      "path": "../RatingEngineCore/RatingEngineCore.csproj",
-      "msbuildProject": "../RatingEngineCore/RatingEngineCore.csproj"
+      "path": "../RatingEngine.Core/RatingEngine.Core.csproj",
+      "msbuildProject": "../RatingEngine.Core/RatingEngine.Core.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
-      "RatingEngineCore >= 1.0.0"
+      "RatingEngine.Core >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -34,17 +34,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj",
-      "projectName": "RatingEngineInfrastructure",
-      "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\RatingEngineInfrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj",
+      "projectName": "RatingEngine.Infrastructure",
+      "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\M246830\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineInfrastructure\\obj\\",
+      "outputPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet"
       ],
       "configFilePaths": [
+        "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\NuGet.Config",
         "C:\\Users\\M246830\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
@@ -54,17 +55,14 @@
         "netcoreapp3.1"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://artifactrepo.mayo.edu/repository/alm_public_read_nuget/": {},
-        "https://pkgs.dev.azure.com/mclm/_packaging/GBSCAD%40Local/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj": {
-              "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngineCore\\RatingEngineCore.csproj"
+            "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj": {
+              "projectPath": "C:\\Users\\M246830\\source\\repos\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj"
             }
           }
         }

@@ -2,7 +2,12 @@
 
     <PropertyGroup>
         <TargetFramework>netcoreapp3.1</TargetFramework>
+        <RootNamespace>QuoteEngineInfrastructure</RootNamespace>
     </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\RatingEngine.Core\RatingEngine.Core.csproj" />
+    </ItemGroup>
 
     <ItemGroup>
       <Folder Include="obj\Debug\netcoreapp3.1" />

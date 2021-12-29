@@ -17,7 +17,7 @@ namespace RatingEngine.Controllers
         [Consumes(MediaTypeNames.Application.Json)]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<object>> FactorPremiumAmount([FromBody] Payload premium)
+        public async Task<ActionResult<Premium>> FactorPremiumAmount([FromBody] Payload premium)
         {
             var results = await GetPremium.GetPremiumAsync(premium);
             return results;

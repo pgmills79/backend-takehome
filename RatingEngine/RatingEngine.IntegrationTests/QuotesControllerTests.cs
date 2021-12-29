@@ -23,36 +23,33 @@ namespace RatingEngine.IntegrationTests
         }
         
         [Theory]
-        [InlineData("600000", "FL", "Architect","28800")]
-        /*[InlineData("/Index")]
-        [InlineData("/About")]
-        [InlineData("/Privacy")]
-        [InlineData("/Contact")]*/
+        [InlineData("6000000", "FL", "Plumber","14,400.00")]
+        [InlineData("357200", "FL", "Programmer","2,148.00")]
+        [InlineData("6000000", "OH", "Plumber","12,000.00")]
+        [InlineData("300000", "OH", "Programmer","1,500.00")]
+        [InlineData("300000", "TX", "Architect","1,131.60")]
+        [InlineData("500000", "TX", "Programmer","2,357.50")]
         public async Task Get_EndpointsReturnSuccessAndCorrectContentType(string revenue, string state, 
             string business, string expectedResult)
         {
             // Arrange
             var u = new Uri("https://localhost:5001/api/quotes");
             var payload = $@"{{""revenue"":{Convert.ToInt32(revenue)},""state"": ""{state}"",""business"": ""{business}"" }}";
-           
 
             HttpContent c = new StringContent(payload, Encoding.UTF8, "application/json");
             var client = _factory.CreateClient();
 
             // Act
             var response = await client.PostAsync(u, c);
-
-            // Assert
             var data = (JObject)JsonConvert.DeserializeObject(response.Content.ReadAsStringAsync().Result);
             var premiumAmount = data.Descendants()
                                     .OfType<JProperty>()
                                     .FirstOrDefault(x => x.Name == "premium")
-                                    ?.Value;
+                                    ?.Value.ToObject<decimal>();
+           
+            // Assert
             response.EnsureSuccessStatusCode(); // Status Code 200-299
-            
-            
-            Assert.Equal("text/html; charset=utf-8", 
-                response.Content.Headers.ContentType.ToString());
+            Assert.Equal($"{Convert.ToDecimal(expectedResult):.##}", $"{premiumAmount:.##}");
         }
     }
 }

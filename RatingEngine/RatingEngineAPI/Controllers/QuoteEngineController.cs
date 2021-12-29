@@ -1,7 +1,7 @@
-﻿using System.Threading.Tasks;
+﻿using System.Net.Mime;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using QuoteEngineInfrastructure;
 using QuoteEngineInfrastructure.Commands.Premium;
 using RatingEngineCore.Models;
 
@@ -10,20 +10,16 @@ namespace RatingEngine.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class QuoteEngineController : ControllerBase
+    public class QuotesController : ControllerBase
     {
-        private readonly IActionHandler _actionHandler;
 
-        public QuoteEngineController(IActionHandler actionHandler)
+        [HttpPost]
+        [Consumes(MediaTypeNames.Application.Json)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public async Task<ActionResult<object>> FactorPremiumAmount([FromBody] Payload premium)
         {
-            _actionHandler = actionHandler;
-        }
-        
-        [HttpGet]
-        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Payload))]
-        public async Task<string> GetPremium([FromBody] Payload premium)
-        {
-            var results = await GetPayloadPremium.GetPremiumAsync(premium);
+            var results = await GetPremium.GetPremiumAsync(premium);
             return results;
         }
     }

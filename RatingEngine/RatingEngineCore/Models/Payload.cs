@@ -2,7 +2,7 @@
 {
     public class Payload
     {
-        public string Revenue { get; set; }
+        public decimal Revenue { get; set; }
         
         public string State { get; set; }
         

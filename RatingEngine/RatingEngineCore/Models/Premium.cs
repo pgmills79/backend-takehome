@@ -1,7 +1,10 @@
-﻿namespace RatingEngineCore.Models
+﻿using System.Text.Json.Serialization;
+
+namespace RatingEngineCore.Models
 {
     public class Premium
     {
-        public string PremiumAmount { get; set; }
+        [JsonPropertyName("premium")]
+        public decimal PremiumAmount { get; set; }
     }
 }

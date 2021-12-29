@@ -21,7 +21,7 @@ Example:
 }
 ```     
 3. Save the above request and body information (from example)
-4. Run The project in debug mode pointing at the RatingEngine Project configuration
+4. Run The project in debug mode pointing at the **RatingEngine** Project configuration (**do NOT run under 'IIS express'**)
 5. switch to Postman and go ahead and send the response (`POST`)
 
 Response with a payload that is the correct premium amount (example above being the amount in following example):    

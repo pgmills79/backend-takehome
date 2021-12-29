@@ -33,7 +33,7 @@ namespace RatingEngine.IntegrationTests
             string business, string expectedResult)
         {
             // Arrange
-            var u = new Uri("https://localhost:5001/api/quotes");
+            var u = new Uri("https://localhost/api/quotes");
             var payload = $@"{{""revenue"":{Convert.ToInt32(revenue)},""state"": ""{state}"",""business"": ""{business}"" }}";
 
             HttpContent c = new StringContent(payload, Encoding.UTF8, "application/json");

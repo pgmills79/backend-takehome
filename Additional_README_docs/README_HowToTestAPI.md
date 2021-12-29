@@ -1,15 +1,15 @@
 ﻿# How to Run the Quote Engine API
 
 ## Step 1:  Get Remote Repository for Project
--From your IDE of choice (Visual Studio, Jetbrains Rider, etc..) connect to remote repository which is located at -> https://github.com/pgmills79/backend-takehome
--The solution to open all necessary projects is located at backend-takehome/RatingEngine/RatingEngine.sln
-  --Note:  There are 5 total projects so you will want to open the entire solution (RatingEngine.sln) in IDE
+1. From your IDE of choice (Visual Studio, Jetbrains Rider, etc..) connect to remote repository which is located at https://github.com/pgmills79/backend-takehome
+2. The solution to open all necessary projects is located at https://github.com/pgmills79/backend-takehome/tree/main/RatingEngine/RatingEngine.sln
+   1. **Note:**  There are **5 total projects** so you will want to open the entire solution (RatingEngine.sln) in IDE
 
 ## Step 2A (Postman):  Testing Quote API from Postman
--Before Running The project in IDE
-    -Open Postman
-    -If you want to just import the request I included the json file that can be imported directly into Postman (File Name: RatingEngine.postman_collection.json)
-    -You can also create a new `POST` response and use this URL: https://localhost:5001/api/quotes  (5001 is the port I am using)
+1. **Before Running The project in IDE**
+2. Open Postman
+    1. If you want to just import the request I included the json file that can be imported directly into Postman (File Name: RatingEngine.postman_collection.json)
+    2. You can also create a new `POST` response and use this URL: https://localhost:5001/api/quotes  (5001 is the port I am using)
 
 The response receives a Payload in the body. 
 ```
@@ -20,11 +20,11 @@ Example:
     business: 'Plumber'
 }
 ```     
--Save the above request and body information (from example)
--Run The project in debug mode pointing at the RatingEngine Project configuration
--switch to Postman and go ahead and send the response (`POST`)
+3. Save the above request and body information (from example)
+4. Run The project in debug mode pointing at the RatingEngine Project configuration
+5. switch to Postman and go ahead and send the response (`POST`)
 
--Response with a payload that is the correct premium amount (example above being the amount in following example):    
+Response with a payload that is the correct premium amount (example above being the amount in following example):    
 ```
 {
     premium: 11316
@@ -32,11 +32,11 @@ Example:
 ```   
 
 ## Step 2B (Swagger):  Testing Quote API from Swagger
--Run The project in debug mode pointing at the RatingEngine Project configuration
-    -When the browser launches it goes directly to swagger
--On the Swagger UI, click on the `POST` section just under Quotes and click 'Try it out'
--Enter any values for revenue, State, and business and click 'Execute' to see the response
--The response should send back a payload with the correct premium amount:
+1. Run The project in debug mode pointing at the RatingEngine Project configuration
+2. When the browser launches it goes directly to swagger
+3. On the Swagger UI, click on the `POST` section just under Quotes and click 'Try it out'
+4. Enter any values for revenue, State, and business and click 'Execute' to see the response
+5. The response should send back a payload with the correct premium amount:
         
 Example `POST` payload:
 ```
@@ -55,15 +55,16 @@ Expected response:
 ```
 
 ## Step 2C (Test Projects):  Testing Quote API from Integration and Unit Test Projects
--In the solution I have created two projects for testing the code
-    1. RatingEngine.IntegrationTests
-      a. These tests are to test the controllers down through the logic and receive the response to test all components
-      b.  Open up RatingEngine/RatingEngine.IntegrationTests/QuotesControllerTests.cs, right click at top of the class and choose "Run All"
-      c.  All tests should be successful
-    2. RatingEngine.UnitTests
-      a. This project was setup to test the logical units that calculate the different factors (state, business, base premium)
-      b.  Open up RatingEngine/RatingEngine.UnitTests/RatingEngineTests.cs, right click at top of the class and choose "Run All"
-      c.  All tests should be successful
+In the solution are two projects for testing the API
+    
+1. RatingEngine.IntegrationTests
+      1. These tests are to test the controllers down through the logic and receive the response to test all components
+      2. Open up RatingEngine/RatingEngine.IntegrationTests/QuotesControllerTests.cs, right click at top of the class and choose "Run All"
+      3. All tests should be successful   
+2. RatingEngine.UnitTests
+     1. This project was setup to test the logical units that calculate the different factors (state, business, base premium)
+     2. Open up RatingEngine/RatingEngine.UnitTests/RatingEngineTests.cs, right click at top of the class and choose "Run All"
+     3. All tests should be successful
     
 
     

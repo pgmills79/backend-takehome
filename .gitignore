@@ -12,3 +12,5 @@
 /RatingEngine/RatingEngine.UnitTests/obj/Debug/netcoreapp3.1
 /RatingEngine/RatingEngine.UnitTests/bin/Release/netcoreapp3.1
 /RatingEngine/RatingEngine.UnitTests/obj
+/RatingEngine/RatingEngine.IntegrationTests/bin/Debug/netcoreapp3.1
+/RatingEngine/RatingEngine.IntegrationTests/obj/Debug/netcoreapp3.1

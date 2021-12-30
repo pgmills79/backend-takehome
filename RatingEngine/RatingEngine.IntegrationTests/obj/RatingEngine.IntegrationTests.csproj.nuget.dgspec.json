@@ -1,0 +1,391 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.IntegrationTests\\RatingEngine.IntegrationTests.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.API\\RatingEngine.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.API\\RatingEngine.API.csproj",
+        "projectName": "RatingEngine.API",
+        "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.API\\RatingEngine.API.csproj",
+        "packagesPath": "C:\\Users\\pgmil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.API\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\NuGet.Config",
+          "C:\\Users\\pgmil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0",
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj"
+              }
+            }
+          },
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.22, 3.1.22]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        },
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.13, 5.0.13]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[5.0.0, 5.0.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj",
+        "projectName": "RatingEngine.Core",
+        "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj",
+        "packagesPath": "C:\\Users\\pgmil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\NuGet.Config",
+          "C:\\Users\\pgmil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj",
+        "projectName": "RatingEngine.Infrastructure",
+        "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\RatingEngine.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\pgmil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\NuGet.Config",
+          "C:\\Users\\pgmil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj": {
+                "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.Core\\RatingEngine.Core.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.IntegrationTests\\RatingEngine.IntegrationTests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.IntegrationTests\\RatingEngine.IntegrationTests.csproj",
+        "projectName": "RatingEngine.IntegrationTests",
+        "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.IntegrationTests\\RatingEngine.IntegrationTests.csproj",
+        "packagesPath": "C:\\Users\\pgmil\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.IntegrationTests\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\NuGet.Config",
+          "C:\\Users\\pgmil\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.API\\RatingEngine.API.csproj": {
+                "projectPath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.API\\RatingEngine.API.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[3.1.22, )"
+            },
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.9.4, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.2, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[3.1.10, 3.1.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[3.1.0, 3.1.0]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

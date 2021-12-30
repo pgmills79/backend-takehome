@@ -22,6 +22,16 @@ Example:
 ```     
 3. Save the above request and body information (from example)
 4. Run The project in debug mode pointing at the **RatingEngine** or **IIS Express**
+	1. When running IIS Express, you may receive an authentication error when the browser appears. To fix this, navigate to \backend-takehome\RatingEngine\.vs\RatingEngine\config and open the applicationhost.config file and make sure anonymousAuthentication is set to true
+	 
+	 '''
+	 <authentication>
+	  <anonymousAuthentication enabled="true" />
+	  <windowsAuthentication enabled="false" />
+	 </authentication> 
+	 '''
+	2. Save the file, rebuild the project and run again, the access and should have access now
+	   
 5. switch to Postman and go ahead and send the response (`POST`)
 
 Response with a payload that is the correct premium amount (example above being the amount in following example):    

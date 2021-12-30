@@ -15,7 +15,12 @@
       "ProjectGuid": "2ba7ab08-3f13-403e-9144-d41d7cdae485",
       "DisplayName": "RatingEngine.IntegrationTests",
       "ColorIndex": 1
+    },
+    "c904a31a-dc24-480f-a28e-b18b410d6110": {
+      "ProjectGuid": "c904a31a-dc24-480f-a28e-b18b410d6110",
+      "DisplayName": "RatingEngine.UnitTests",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

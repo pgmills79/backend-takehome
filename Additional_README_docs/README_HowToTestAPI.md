@@ -43,6 +43,7 @@ Response with a payload that is the correct premium amount (example above being 
 
 ## Step 2B (Swagger):  Testing Quote API from Swagger
 1. Run The project in debug mode pointing at the RatingEngine Project configuration
+   1. If a 'HTTP Error 401.2 - Unauthorized' message appears see 3.i.a above to resolve this
 2. When the browser launches it goes directly to swagger
 3. On the Swagger UI, click on the `POST` section just under Quotes and click 'Try it out'
 4. Enter any values for revenue, State, and business and click 'Execute' to see the response

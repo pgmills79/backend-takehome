@@ -1,7 +1,7 @@
 ﻿# Future Enhancements to the Quotes API
 
 ## Addition #1:  Error Handling
-I would add error handling for if invalid input was entered from an external service talking to the API.  For example if a comma ',' is entered in the revenue value, the response back gives the generic 400 bad request message.  I would send back a more accurate message (**side note**:  I can also design the API to accept commas for the revenue)
+I would add error handling for if invalid input was entered from an external service talking to the API.  For example if a comma ',' is entered in the revenue value, the response back gives the generic '400 bad request' message.  I would send back a more accurate message (**side note**:  I can also design the API to accept commas for the revenue)
 
 I would create a model called called 'ErrorResponse' or something along that line to be able to give a standard message back for whichever error is given.  For example, if the user enters an invalid state abbreviation we can return a message stating 'Invalid State'
 
@@ -106,13 +106,13 @@ public class ModelNameRepository : IModelNameRepository
 
 This type fo structure allows for scalability as more and more API endpoints are added and make boiler plate code which can be easily copied/pasted and I use Jetbrains Rider which allows me to have templates setup allowing me to wire up an API endpoint from controller to repository quickly.
 
-With this project, I did NOT take advantage of dependency injection and running services in the stureture because it would have been an overkill so it makes sense I would add this into the future enhancements
+With this project, I did NOT take advantage of dependency injection and running services in the structure because it would have been an overkill so it makes sense I would add this into the future enhancements
 
 
 ## Addition #4:  Unit tests and integration tests working in Visual Studio
 I was having troubles getting the integration and unit tests to run in Visual Studio.  They run fine in Jetbrains Rider because it uses its own test run framework but Visual Studio was giving me grief as it seems it didn't have the correct Nuget packages installed.  I was trying to run them in Visual Studio 2022 Community Edition
 
 ## Addition #5:  IIS Express configurations and authentication
-I was having to manually edit the applicationhost.config file to allow anonymous authentication each time the project was run which was annoying so I would look at way to have that setting always persisted.  Of course, anonymous authentication would not be allowed in most cases in real world.  
+I was having to manually edit the applicationhost.config file to allow anonymous authentication each time the project was run which was time consuming so I would look at way to have that setting always persisted.  Of course, anonymous authentication would not be allowed in most cases in real world.  
 
 I would add OAuth authentication to the application so that it is more secure

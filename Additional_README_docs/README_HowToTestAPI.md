@@ -21,18 +21,18 @@ Example:
 }
 ```     
 3. Save the above request and body information (from example)
-4. Run The project in debug mode pointing at the **RatingEngine** or **IIS Express**
-	1. When running IIS Express, you may receive an authentication error when the browser appears. To fix this, navigate to \backend-takehome\RatingEngine\.vs\RatingEngine\config and open the applicationhost.config file and make sure anonymousAuthentication is set to true
-	 
-	 '''
-	 <authentication>
-	  <anonymousAuthentication enabled="true" />
-	  <windowsAuthentication enabled="false" />
-	 </authentication> 
-	 '''
-	2. Save the file, rebuild the project and run again, the access and should have access now
+   1. Run The project in debug mode pointing at the **RatingEngine** or **IIS Express**
+       1. When running IIS Express, you may receive 'HTTP Error 401.2 - Unauthorized' message when the browser appears. To fix this, navigate to \backend-takehome\RatingEngine\.vs\RatingEngine\config and open the applicationhost.config file and make sure anonymousAuthentication is set to true
+
+       ``` 
+        <authentication>
+         <anonymousAuthentication enabled="true" />
+         <windowsAuthentication enabled="false" />
+        </authentication> 
+       ``` 
+       2. Save the file, rebuild the project and run again, and there should be access now
 	   
-5. switch to Postman and go ahead and send the response (`POST`)
+4. Switch to Postman and go ahead and send the response (`POST`)
 
 Response with a payload that is the correct premium amount (example above being the amount in following example):    
 ```
@@ -43,6 +43,7 @@ Response with a payload that is the correct premium amount (example above being 
 
 ## Step 2B (Swagger):  Testing Quote API from Swagger
 1. Run The project in debug mode pointing at the RatingEngine Project configuration
+   1. If a 'HTTP Error 401.2 - Unauthorized' message appears see 3.i.a above to resolve this
 2. When the browser launches it goes directly to swagger
 3. On the Swagger UI, click on the `POST` section just under Quotes and click 'Try it out'
 4. Enter any values for revenue, State, and business and click 'Execute' to see the response

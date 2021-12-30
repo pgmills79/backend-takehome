@@ -9,7 +9,7 @@
 1. **Before Running The project in IDE**
 2. Open Postman
     1. If you want to just import the request I included the json file that can be imported directly into Postman (File Name: RatingEngine.postman_collection.json)
-    2. You can also create a new `POST` response and use this URL: https://localhost:5001/api/quotes  (5001 is the port I am using)
+    2. You can also create a new `POST` response and use this URL: http://localhost:5001/api/quotes  (5001 is the port I am using)
 
 The response receives a Payload in the body. 
 ```

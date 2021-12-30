@@ -27,7 +27,7 @@
 					}
 				},
 				"url": {
-					"raw": "https://localhost:5001/api/quotes",
+					"raw": "http://localhost:5001/api/quotes",
 					"protocol": "https",
 					"host": [
 						"localhost"

@@ -109,10 +109,7 @@ This type fo structure allows for scalability as more and more API endpoints are
 With this project, I did NOT take advantage of dependency injection and running services in the structure because it would have been an overkill so it makes sense I would add this into the future enhancements
 
 
-## Addition #4:  Unit tests and integration tests working in Visual Studio
-I was having troubles getting the integration and unit tests to run in Visual Studio.  They run fine in Jetbrains Rider because it uses its own test run framework but Visual Studio was giving me grief as it seems it didn't have the correct Nuget packages installed.  I was trying to run them in Visual Studio 2022 Community Edition
-
-## Addition #5:  API Versioning
+## Addition #4:  API Versioning
 The project would have API versionin on it.
 
 in Program.CS to setup versioning:
@@ -140,7 +137,7 @@ The controller would then have the API version and route to reflect versioning:
  [Route("api/v{version:apiVersion}/[controller]")]
 ```
 
-## Addition #6:  IIS Express configurations and authentication
+## Addition #5:  IIS Express configurations and authentication
 I was having to manually edit the applicationhost.config file to allow anonymous authentication each time the project was run which was time consuming so I would look at way to have that setting always persisted.  Of course, anonymous authentication would not be allowed in most cases in real world.  
 
 I would add OAuth authentication to the application so that it is more secure

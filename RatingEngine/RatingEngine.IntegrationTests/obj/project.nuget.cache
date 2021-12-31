@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QQg76LRHozY2l1enOgDABby5okbGaMaVBWNgNZAYxCXPAWhwk2Zn8SkKL0OYxaPLzvg05E0lon9BDbptN/gLgA==",
+  "dgSpecHash": "yrbNJWVeUezEHrTtDvzAkjkW4hul+dfrJYe5633gZ1nxAg8kCQJhRuv83+SEGiIV2Lmu9zV3RrCOnIFFs0tBFA==",
   "success": true,
   "projectFilePath": "C:\\Users\\pgmil\\source\\repos\\pgmills79\\backend-takehome\\RatingEngine\\RatingEngine.IntegrationTests\\RatingEngine.IntegrationTests.csproj",
   "expectedPackageFiles": [

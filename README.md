@@ -81,10 +81,64 @@ In the solution are two projects for testing the API
 
 # Future Enhancements to the Quotes API
 
-## Addition #1:  Error Handling
-I would add error handling for if invalid input was entered from an external service talking to the API.  For example if a comma ',' is entered in the revenue value, the response back gives the generic '400 bad request' message.  I would send back a more accurate message (**side note**:  I can also design the API to accept commas for the revenue)
+## Addition #1:  Data Validation
+Adding datavalidation using FluentValidation library (why reinvent the wheel??).  Instead of using multiple data annotations on a model we can use FluentValidation for all validation to seperate validation from the model.
 
-I would create a model called called 'ErrorResponse' or something along that line to be able to give a standard message back for whichever error is given.  For example, if the user enters an invalid state abbreviation we can return a message stating 'Invalid State'
+Example data annotations on model 
+```
+public class Payload
+{
+	[Required]
+	public decimal Revenue { get; set; }
+
+	[Required]
+	public string State { get; set; }
+
+	[Required]
+	public string Business { get; set; }
+}
+```
+
+Using FluentValidation we can set it in Startup.cs
+
+```
+services.AddControllers().AddFluentValidation(s =>
+{
+	s.RegisterValidatorsFromAssemblyContaining<Startup>();
+	s.RunDefaultMvcValidationAfterFluentValidationExecutes = false;
+});
+```
+
+Then use a validation class at the API layer:
+```
+public class PayloadValidator : AbstractValidator<Payload>
+{
+	public PayloadValidator()
+	{
+		RuleFor(p => p.Revenue).NotEmpty().WithMessage("{PropertyName} should NEVER BE Empty!");
+		
+		RuleFor(p => p.Revenue).GreaterThanOrEqualTo(0);
+	}
+}
+```
+
+HTTP response when user forgets to input a revenue amount:
+```
+"errors": {
+        "Revenue": [
+            "Revenue should NEVER BE Empty!"
+        ]
+ }
+```
+
+HTTP response when user puts a negative revenue amount:
+```
+"errors": {
+        "Revenue": [
+            "'Revenue' must be greater than or equal to '0'."
+        ]
+}
+```
 
 ## Addition #2:  Move the factoring ratios and calculations to database
 We can move the data from the excel file to a database and be able to store the different factor values, states, and jobs to tables so that we can add/remove/update values.  I can see needing to add all states and many more job titles into the factoring and so having them stored in the database would be better for scalability

@@ -84,7 +84,7 @@ In the solution are two projects for testing the API
 ## Addition #1:  Data Validation
 Adding datavalidation using FluentValidation library (why reinvent the wheel??).  Instead of using multiple data annotations on a model we can use FluentValidation for all validation to seperate validation from the model.
 
-Example data annotations on model 
+Example data annotations on model (***before using FluentValidation***) 
 ```
 public class Payload
 {

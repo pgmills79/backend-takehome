@@ -241,8 +241,6 @@ public class ModelNameRepository : IModelNameRepository
 
 This type fo structure allows for scalability as more and more API endpoints are added and make boiler plate code which can be easily copied/pasted and I use Jetbrains Rider which allows me to have templates setup allowing me to wire up an API endpoint from controller to repository quickly.
 
-With this project, I did NOT take advantage of dependency injection and running services in the structure because it would have been an overkill so it makes sense I would add this into the future enhancements
-
 
 ## Addition #4:  API Versioning
 The project would have API versionin on it.

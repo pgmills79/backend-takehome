@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 using System.Threading.Tasks;
 using RatingEngineCore.HelperClasses;
 using RatingEngineCore.Models;
@@ -7,10 +5,15 @@ using RatingEngineCore.Models;
 
 namespace QuoteEngineInfrastructure.Commands.Premium
 {
-    public static class GetPremium
+
+    public interface IPremium 
+    {
+        public Task<RatingEngineCore.Models.Premium> ReturnPremiumAmount(Payload input);
+    }
+    public class Premium : IPremium
     {
         private const int HazardFactor = 4;
-        public static async Task<RatingEngineCore.Models.Premium> ReturnPremiumAmountAsync(Payload input)
+        public Task<RatingEngineCore.Models.Premium> ReturnPremiumAmount(Payload input)
         {
 
             var stateFactor = Factors.GetStateFactor(input.State);
@@ -23,7 +26,7 @@ namespace QuoteEngineInfrastructure.Commands.Premium
                 PremiumAmount = stateFactor * businessFactor * basePremium * HazardFactor
             };
 
-            return newPremium;
+            return Task.FromResult(newPremium);
 
         }
     }

@@ -20,12 +20,12 @@ namespace RatingEngine.IntegrationTests
         }
         
         [Theory]
-        [InlineData("6000000", "FL", "Plumber","14,400.00")]
-        [InlineData("357200", "FL", "Programmer","2,148.00")]
-        [InlineData("6000000", "OH", "Plumber","12,000.00")]
-        [InlineData("300000", "OH", "Programmer","1,500.00")]
-        [InlineData("300000", "TX", "Architect","1,131.60")]
-        [InlineData("500000", "TX", "Programmer","2,357.50")]
+        [InlineData("6000000", "FL", "Plumber","14400")]
+        [InlineData("357200", "FL", "Programmer","2148")]
+        [InlineData("6000000", "OH", "Plumber","12000")]
+        [InlineData("300000", "OH", "Programmer","1500")]
+        [InlineData("300000", "TX", "Architect","1131.60")]
+        [InlineData("500000", "TX", "Programmer","2357.50")]
         public async Task POST_Payloads_Should_Return_Correct_Premium_Amounts(string revenue, string state, 
             string business, string expectedResult)
         {
